@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Oscar Pérez López -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="sortcut icon" href="../img/favicon-96x96.png">
+    <title>La web del arte</title>
+    <a name="Inicio"></a>
+</head>
+
+<body>
+    <div id="head">
+        <h1>La web de las artes</h1>
+        <div id="menu">
+            <h2>SECCIÓN: Contáctanos</h2>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../html/musica.html">Música</a></li>
+                <li><a href="../html/cine.html">Cine</a></li>
+                <li><a href="../html/literatura.html">Géneros Literarios</a></li>
+                <li><a href="../html/multimedia.html">Multimedia</a></li>
+                <li><a href="../html/contacto.html">Contáctanos</a></li>
+            </ul>
+            <hr>
+        </div>
+    </div>
+    <div id="body">
+        <div id="formulario">
+            <form action="../php/referencia.php" enctype="multipart/form-data" method="post">
+                <fieldset>
+                    <legend>Datos Personales</legend>
+                    <p><label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre..." required>*
+                        <br />
+                    <p><label for="apellidos">Apellidos:</label>
+                        <input type="text" id="apellidos" name="apellidos" placeholder="Introduce tu apellido..."
+                            required>*
+                    </p>
+                    <p><label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="usuario@email.com" required>*
+                    </p>
+                    <p><label for="fechanacimiento">Fecha de Nacimiento:</label>
+                        <input type="date" id="fechanacimiento" name="fechanacimiento">
+                    </p>
+                    <p><label for="edad">Edad:</label>
+                        <input type="number" id="edad" name="edad" max="100" min="1">
+                    </p>
+                    <p><label for="sexo">Sexo:</label>
+                        <input type="radio" id="sexo" name="sexo" value="hombre">Hombre
+                        <input type="radio" id="sexo" name="sexo" value="hombre">Mujer
+                    </p>
+                    <p><label for="pais">País:</label>
+                        <select id="pais" name="pais">
+                            <option value="" selected="selected"> - Selecciona - </option>
+                            <option value="España">España</option>
+                            <option value="Francia">Francia</option>
+                            <option value="Portugal">Portugal</option>
+                            <option value="Italia">Italia</option>
+                        </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Otros Datos</legend>
+                    <p><label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" placeholder="Introduce tu mensaje..." rows="10"
+                            cols="50"></textarea>
+                    </p>
+                    <p><label for="foto">Adjunta una foto...</label>
+                        <input type="file" id="foto" name="foto">
+                    </p>
+                </fieldset>
+                <p>
+                    <input type="checkbox">He leído las condiciones ...
+                </p>
+                <input type="reset" value="Limpiar">
+                <input type="submit" value="Enviar" target="_blank">
+            </form>
+        </div>
+        <div id="mapa">
+            <h2>Centro de referencia</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14031.118932241417!2d-16.2832682!3d28.4560556!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xab9f2a74d9e68b51!2sCIFP%20C%C3%A9sar%20Manrique!5e0!3m2!1ses!2ses!4v1666193709383!5m2!1ses!2ses"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+    <div>
+        <hr>
+        <a href="#Inicio">Inicio</a>
+    </div>
+</body>
+
+</html>
